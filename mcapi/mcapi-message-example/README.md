@@ -1,7 +1,7 @@
 ## mcapi message example for Analog Devices Processors
 
 This example is a mcapi message example running on SHARC Cores to communicate with
-the ARM Core which is running the Analog Devices Yocto Linux for ADSP-SC5xx product. 
+the ARM Core which is running the Analog Devices Yocto Linux for ADSP-SC5xx product.
 
 ### Supported Processor:
   * ADSP-SC573
