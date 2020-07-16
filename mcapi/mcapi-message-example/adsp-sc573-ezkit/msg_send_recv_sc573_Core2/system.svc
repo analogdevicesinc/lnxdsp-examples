@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+	<installedComponents>
+		<component id="com.analog.crosscore.addins.mcapi" name="Analog Devices' MCAPI" version="1.0.0" visible="true">
+			<component-description><![CDATA[This add-in provides Analog Devices' implementation of Multicore association's Multicore Communications API (MCAPI™) version 2.15]]></component-description>
+			<product name="Analog Devices implementation of Multicore Communications API (MCAPI™) v2.15" version="1.0.0"/>
+		</component>
+	</installedComponents>
+	<configurations>
+		<configuration id="com.analog.crosscore.addins.mcapi">
+			<mcapi-configuration>
+				<schema>1.0</schema>
+				<mcapi-config-node-id>2</mcapi-config-node-id>
+				<mcapi-config-num-endpoints>24</mcapi-config-num-endpoints>
+				<mcapi-config-anon-endpoints>8</mcapi-config-anon-endpoints>
+				<mcapi-config-max-payload-size>1024</mcapi-config-max-payload-size>
+				<mcapi-config-num-transmit-buffers>16</mcapi-config-num-transmit-buffers>
+				<mcapi-config-num-receive-buffers>1</mcapi-config-num-receive-buffers>
+				<mcapi-config-num-api-requests>31</mcapi-config-num-api-requests>
+				<mcapi-config-num-isr-requests>16</mcapi-config-num-isr-requests>
+			</mcapi-configuration>
+		</configuration>
+	</configurations>
+</root>
