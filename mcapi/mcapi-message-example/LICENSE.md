@@ -1,7 +1,7 @@
 
-Files in this repository are Copright and Licensed as follows:
+Files in this sub-directory are Copright and Licensed as follows:
 
-The entirety of this repository are files Copyright to Analog Devices are licensed under the 4 Clause BSD License. See License below.
+The files in the directory and below are copyright to Analog Devices are licensed under the 4 Clause BSD License. See License below.
 
 --------------------------------------------------------------------------------------
 
