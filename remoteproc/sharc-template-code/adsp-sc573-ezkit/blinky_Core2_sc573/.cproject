@@ -83,7 +83,7 @@
 								<option id="sharc.loader.option.initfile.865489366" name="Initialization file (-init)" superClass="sharc.loader.option.initfile" useByScannerDiscovery="false" value="" valueType="string"/>
 								<option id="sharc.loader.option.executable.set1.1174162704" name="Executable" superClass="sharc.loader.option.executable.set1" useByScannerDiscovery="false" value="" valueType="string"/>
 								<option id="sharc.loader.option.boolean.finaltag.set1.1614990894" name="Append core input without introducing a FINAL block (-NoFinalTag)" superClass="sharc.loader.option.boolean.finaltag.set1" useByScannerDiscovery="false" value="false" valueType="boolean"/>
-								<option id="sharc.loader.option.executable.set3.1329738143" name="Executable" superClass="sharc.loader.option.executable.set3" useByScannerDiscovery="false" value="${OutDir}/blinky_Core2_sc573.dxe" valueType="string"/>
+								<option id="sharc.loader.option.executable.set3.1329738143" name="Executable" superClass="sharc.loader.option.executable.set3" useByScannerDiscovery="false" value="${OutDir}/${ProjName}.dxe" valueType="string"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -186,7 +186,7 @@
 									<listOptionValue builtIn="false" value="-MaxBlockSize 2048"/>
 								</option>
 								<option id="sharc.loader.option.executable.set2.574235403" name="Executable" superClass="sharc.loader.option.executable.set2" useByScannerDiscovery="false" value="" valueType="string"/>
-								<option id="sharc.loader.option.executable.set3.1752517542" name="Executable" superClass="sharc.loader.option.executable.set3" value="${OutDir}/blinky_Core2_sc573.dxe" valueType="string"/>
+								<option id="sharc.loader.option.executable.set3.1752517542" name="Executable" superClass="sharc.loader.option.executable.set3" value="${OutDir}/${ProjName}.dxe" valueType="string"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
