@@ -45,17 +45,17 @@ int main(int argc, char *argv[])
 	/* Remoteproc Initialize */
 	prvRemoteProcProbe(nCoreID);
 
-    *pREG_PORTE_FER      = 0;   // GPIO mode
-    *pREG_PORTE_DIR_SET  = DIRSET;
+    *pREG_PORTD_FER      = 0;   // GPIO mode
+    *pREG_PORTD_DIR_SET  = DIRSET;
 
     while(1)
 	{
     	if (SEC_RESET) {
-    			*pREG_PORTE_DATA_CLR = DIRSET;
+    			*pREG_PORTD_DATA_CLR = DIRSET;
     	    	/* Remoteproc Remove */
     	    	prvRemoteProcRemove(nCoreID);
     	} else {
-    		*pREG_PORTE_DATA_TGL  = DATTGL;
+    		*pREG_PORTD_DATA_TGL  = DATTGL;
     		for(i=0; i<TIME_DELAY; i++)
     			k++;
     		var[0] = 0xdead;
