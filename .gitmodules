@@ -1,0 +1,6 @@
+[submodule "rpmsg-lite"]
+	path = rpmsg-lite
+	url = https://github.com/analogdevicesinc/rpmsg-lite
+[submodule "icap"]
+	path = icap
+	url = https://github.com/analogdevicesinc/icap
