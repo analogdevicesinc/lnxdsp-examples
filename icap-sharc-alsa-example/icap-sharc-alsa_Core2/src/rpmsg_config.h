@@ -1,0 +1,9 @@
+#ifndef INCLUDE_RPMSG_CONFIG_H_
+#define INCLUDE_RPMSG_CONFIG_H_
+
+#define RL_USE_STATIC_API (1)
+
+//#define VRING_SIZE (0x8000UL)
+//#define RL_BUFFER_COUNT (2U)
+
+#endif /* INCLUDE_RPMSG_CONFIG_H_ */
