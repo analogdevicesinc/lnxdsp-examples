@@ -13,7 +13,6 @@
 
 struct sharc_sync_msg dma_buffers;
 volatile uint8_t dma_buf_initialized = 0;
-
 /** 
  * If you want to use command program arguments, then place them in the following string. 
  */
@@ -39,6 +38,7 @@ int main(int argc, char *argv[])
 	}
 
 	init_rsc_tbl();
+
 	while(!rsc_tbl_ready()){
 		/* Wait for resource table to be initialized by ARM */
 	}
@@ -60,6 +60,5 @@ int main(int argc, char *argv[])
 	while(1) {
 		icap_loop(&icap_sharc_alsa);
 	}
-	return 0;
 }
 

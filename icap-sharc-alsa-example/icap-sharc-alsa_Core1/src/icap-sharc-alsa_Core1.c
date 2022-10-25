@@ -191,9 +191,6 @@ static void SPORTCallback(
         default:
         	 break;
     }
-
-
-
     /* return */
 }
 
@@ -237,7 +234,6 @@ void Switch_Configurator()
 {
 	int delay11=0xffff;
 
-
 	/* Software Switch Configuration for Enabling ADC-DAC */
 	ConfigSoftSwitches_ADC_DAC();
 
@@ -248,7 +244,6 @@ void Switch_Configurator()
 
 	/* Software Switch Configuration for Re-Setting ADC-DAC  */
 	ConfigSoftSwitches_ADAU_Reset();
-
 
 	/* wait for Codec to up */
 	delay11=0xffff;
@@ -444,7 +439,6 @@ unsigned char Read_TWI_8bit_Reg(unsigned char Reg_ID)
 
 static int Init_TWI(void)
 {
-
 	ADI_TWI_RESULT eResult;
 
 	eResult = adi_twi_Open(TWIDEVNUM, ADI_TWI_MASTER, &TwideviceMemory[0],
@@ -495,7 +489,8 @@ static int Stop_TWI(void)
 /*****************************************************************************************************************************/
 
 static int ADAU_1962_init(void)
-{	int i;
+{
+	int i;
 	ADAU_1962_Pllinit();
 	for(i=0;i<28;i++)
 	{
@@ -557,7 +552,8 @@ static int ADAU_1962_Pllinit(void)
 
 
 static int ADAU_1979_init(void)
-{	int i;
+{
+	int i;
 
 	ADAU_1979_Pllinit();
 
@@ -577,7 +573,6 @@ static int ADAU_1979_init(void)
 
 static int ADAU_1979_Pllinit(void)
 {
-
 	int status,delay1=0xffff;
 
 	ADI_TWI_RESULT eResult;
@@ -592,9 +587,9 @@ static int ADAU_1979_Pllinit(void)
 	Write_TWI_8bit_Reg(ADAU1979_REG_PLL,0x03);
 	status=Read_TWI_8bit_Reg(ADAU1979_REG_PLL);
 	while(delay1--)
-			{
-				asm("nop;");
-			}
+	{
+		asm("nop;");
+	}
 	while(!((status & 0x80)>>7)  )
 	{
 		status=Read_TWI_8bit_Reg(ADAU1979_REG_PLL);
@@ -682,6 +677,7 @@ int main(int argc, char *argv[])
 	}
 
 	init_rsc_tbl();
+
 	while(!rsc_tbl_ready()){
 		/* Wait for resource table to be initialized by ARM*/
 	}
@@ -710,4 +706,3 @@ int main(int argc, char *argv[])
 		icap_loop(&icap_sharc_alsa);
 	}
 }
-
