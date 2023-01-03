@@ -25,30 +25,30 @@
 							<builder buildPath="${workspace_loc:/sc594-ezkit-arm-bm-led-toggle_Core0}/Debug" id="arm.toolchain.builder.base.1650366818" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="arm.toolchain.builder.base"/>
 							<tool id="arm.toolchain.bare.assembler.417591890" name="CrossCore ARM Bare Metal Assembler" superClass="arm.toolchain.bare.assembler">
 								<option id="arm.assembler.option.debuginfo.1435628032" name="Generate debug information (-g)" superClass="arm.assembler.option.debuginfo" useByScannerDiscovery="false"/>
-								<option id="arm.base.assembler.option.proc.614542882" name="-mproc" superClass="arm.base.assembler.option.proc" value=" ADSP-SC594" valueType="string"/>
-								<option id="arm.assembler.option.sirevision.1886800983" name="-msi-revision" superClass="arm.assembler.option.sirevision" value=" 0.0" valueType="string"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.assembler.option.preprocessdefs.315128204" name="Preprocessor definitions (-D):" superClass="arm.assembler.option.preprocessdefs" valueType="definedSymbols">
+								<option id="arm.base.assembler.option.proc.614542882" name="-mproc" superClass="arm.base.assembler.option.proc" useByScannerDiscovery="false" value=" ADSP-SC594" valueType="string"/>
+								<option id="arm.assembler.option.sirevision.1886800983" name="-msi-revision" superClass="arm.assembler.option.sirevision" useByScannerDiscovery="false" value=" 0.0" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.assembler.option.preprocessdefs.315128204" name="Preprocessor definitions (-D):" superClass="arm.assembler.option.preprocessdefs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="_DEBUG"/>
 								</option>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.assembler.option.additionaldirectories.15455283" name="Additional include directories (-I):" superClass="arm.assembler.option.additionaldirectories" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.assembler.option.additionaldirectories.15455283" name="Additional include directories (-I):" superClass="arm.assembler.option.additionaldirectories" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 								</option>
 								<inputType id="arm.toolchain.assembler.base.input.1524502485" superClass="arm.toolchain.assembler.base.input"/>
 							</tool>
 							<tool id="arm.toolchain.bare.c.compiler.176479427" name="CrossCore ARM Bare Metal C Compiler" superClass="arm.toolchain.bare.c.compiler">
-								<option defaultValue="false" id="arm.base.compiler.option.optimization.enable.1377858123" name="Enable optimization" superClass="arm.base.compiler.option.optimization.enable" valueType="boolean"/>
-								<option defaultValue="arm.base.compiler.option.optimization.og" id="arm.base.compiler.option.optimization.1100916533" name="Optimization level" superClass="arm.base.compiler.option.optimization" valueType="enumerated"/>
-								<option defaultValue="true" id="arm.base.compiler.option.debug.917568734" name="Generate debug information (-g)" superClass="arm.base.compiler.option.debug" valueType="boolean"/>
-								<option id="arm.base.compiler.option.proc.1292044104" name="-mproc" superClass="arm.base.compiler.option.proc" value=" ADSP-SC594" valueType="string"/>
-								<option id="arm.base.compiler.option.sirevision.1385643053" name="-msi-revision" superClass="arm.base.compiler.option.sirevision" value=" 0.0" valueType="string"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.base.compiler.option.preprocessdefs.1685173355" name="Preprocessor definitions (-D):" superClass="arm.base.compiler.option.preprocessdefs" valueType="definedSymbols">
+								<option defaultValue="false" id="arm.base.compiler.option.optimization.enable.1377858123" name="Enable optimization" superClass="arm.base.compiler.option.optimization.enable" useByScannerDiscovery="false" valueType="boolean"/>
+								<option defaultValue="arm.base.compiler.option.optimization.og" id="arm.base.compiler.option.optimization.1100916533" name="Optimization level" superClass="arm.base.compiler.option.optimization" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option defaultValue="true" id="arm.base.compiler.option.debug.917568734" name="Generate debug information (-g)" superClass="arm.base.compiler.option.debug" useByScannerDiscovery="false" valueType="boolean"/>
+								<option id="arm.base.compiler.option.proc.1292044104" name="-mproc" superClass="arm.base.compiler.option.proc" useByScannerDiscovery="false" value=" ADSP-SC594" valueType="string"/>
+								<option id="arm.base.compiler.option.sirevision.1385643053" name="-msi-revision" superClass="arm.base.compiler.option.sirevision" useByScannerDiscovery="false" value=" 0.0" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.base.compiler.option.preprocessdefs.1685173355" name="Preprocessor definitions (-D):" superClass="arm.base.compiler.option.preprocessdefs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="_DEBUG"/>
 									<listOptionValue builtIn="false" value="ADI_DEBUG"/>
 								</option>
-								<option id="arm.toolchain.cpp.compiler.option.coreid.924103525" name="Specify the core Id (-DCORE[A|B|0-2])" superClass="arm.toolchain.cpp.compiler.option.coreid" value="0" valueType="string"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.base.compiler.option.include.paths.398478787" name="Additional include directories (-I):" superClass="arm.base.compiler.option.include.paths" valueType="includePath">
+								<option id="arm.toolchain.cpp.compiler.option.coreid.924103525" name="Specify the core Id (-DCORE[A|B|0-2])" superClass="arm.toolchain.cpp.compiler.option.coreid" useByScannerDiscovery="false" value="0" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.base.compiler.option.include.paths.398478787" name="Additional include directories (-I):" superClass="arm.base.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rpmsg-lite/lib/include}&quot;"/>
@@ -58,15 +58,15 @@
 								<inputType id="arm.toolchain.bare.c.input.417351056" name="C Source" superClass="arm.toolchain.bare.c.input"/>
 							</tool>
 							<tool id="arm.toolchain.bare.c.linker.125133805" name="CrossCore ARM Bare Metal C Linker" superClass="arm.toolchain.bare.c.linker">
-								<option defaultValue="true" id="arm.c.linker.debuglibs.1092764020" name="Use debug system libraries (-mdebug-libs)" superClass="arm.c.linker.debuglibs" valueType="boolean"/>
-								<option id="arm.linker.option.proc.1059437902" name="-mproc" superClass="arm.linker.option.proc" value=" ADSP-SC594" valueType="string"/>
-								<option id="arm.linker.option.sirevision.1340240981" name="-msi-revision" superClass="arm.linker.option.sirevision" value=" 0.0" valueType="string"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.linker.option.preprocessdefs.174208074" name="Preprocessor definitions (-D):" superClass="arm.linker.option.preprocessdefs" valueType="definedSymbols">
+								<option defaultValue="true" id="arm.c.linker.debuglibs.1092764020" name="Use debug system libraries (-mdebug-libs)" superClass="arm.c.linker.debuglibs" useByScannerDiscovery="false" valueType="boolean"/>
+								<option id="arm.linker.option.proc.1059437902" name="-mproc" superClass="arm.linker.option.proc" useByScannerDiscovery="false" value=" ADSP-SC594" valueType="string"/>
+								<option id="arm.linker.option.sirevision.1340240981" name="-msi-revision" superClass="arm.linker.option.sirevision" useByScannerDiscovery="false" value=" 0.0" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="arm.linker.option.preprocessdefs.174208074" name="Preprocessor definitions (-D):" superClass="arm.linker.option.preprocessdefs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.355139634" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
-								<option id="arm.linker.option.gensymbolmap.164465300" name="Generate symbol map (-Wl,-Map)" superClass="arm.linker.option.gensymbolmap" value="false" valueType="boolean"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.355139634" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" useByScannerDiscovery="false" value="&quot;${workspace_loc:/${ProjName}/system/linker/app.ld}&quot;" valueType="string"/>
+								<option id="arm.linker.option.gensymbolmap.164465300" name="Generate symbol map (-Wl,-Map)" superClass="arm.linker.option.gensymbolmap" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<inputType id="arm.linker.input.1567683953" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
@@ -188,7 +188,7 @@
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="RELEASE"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.1992912668" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.1992912668" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="" valueType="string"/>
 								<inputType id="arm.linker.input.367505431" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
