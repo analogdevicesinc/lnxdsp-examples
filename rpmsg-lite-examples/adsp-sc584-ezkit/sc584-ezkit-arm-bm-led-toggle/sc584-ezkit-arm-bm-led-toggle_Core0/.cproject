@@ -61,7 +61,7 @@
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.2109019312" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.2109019312" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${workspace_loc:/${ProjName}/system/linker/app.ld}&quot;" valueType="string"/>
 								<inputType id="arm.linker.input.681353011" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
@@ -184,7 +184,7 @@
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="RELEASE"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.468963930" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.468963930" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="" valueType="string"/>
 								<inputType id="arm.linker.input.1849856407" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
