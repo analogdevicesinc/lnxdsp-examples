@@ -13,10 +13,6 @@
 			<component-description><![CDATA[This component provides the ability to configure the heap and stack memories.]]></component-description>
 			<product name="Startup Code/LDF" version="1.0.0"/>
 		</component>
-		<component id="com.analog.crosscore.addins.linkerfiles" name="Linker Files" version="1.0.0" visible="true">
-			<component-description><![CDATA[This component adds default Memory Management Unit (MMU) configuration and Linker LD script files to your project. You can then modify these files if you wish to customize them.]]></component-description>
-			<product name="Analog Devices implementation of linker files" version="1.0.0"/>
-		</component>
 	</installedComponents>
 	<configurations>
 		<configuration id="com.analog.crosscore.ssldd.pinmux.component">
@@ -112,13 +108,6 @@
 					</ldf>
 				</crt_and_ldf>
 			</heap_stack-configuration>
-		</configuration>
-		<configuration id="com.analog.crosscore.addins.linkerfiles">
-			<linker-configuration>
-				<schema>1.0</schema>
-				<linker-config-core-id>0</linker-config-core-id>
-				<linker-config-ld-file>L3</linker-config-ld-file>
-			</linker-configuration>
 		</configuration>
 	</configurations>
 </root>
