@@ -220,7 +220,8 @@ const adi_mmu_AbstractPageEntry _adi_mmu_absPageTable[] =
     { 0xC0000000u, 0xC05FFFFFu, ADI_MMU_RO_UNCACHED         }, /*   6MB DDR-B : SHARC1 NW code   */
     { 0xC0600000u, 0xC09FFFFFu, SHARC_L3                    }, /*   4MB DDR-B : SHARC1 data      */
     { 0xC0A00000u, 0xC0FFFFFFu, ADI_MMU_RO_UNCACHED         }, /*   6MB DDR-B : SHARC1 VISA code */
-    { 0xC1000000u, 0xCFFFFFFFu, ADI_MMU_WB_CACHED           }, /* 240MB DDR-B : ARM    code&data */
+    { 0xC1000000u, 0xC13FFFFFu, ADI_MMU_RW_UNCACHED         }, /*   4MB DDR-B : ARM data 		 */
+    { 0xC1400000u, 0xCFFFFFFFu, ADI_MMU_WB_CACHED           }, /* 236MB DDR-B : ARM    code&data */
 #endif
 };
 

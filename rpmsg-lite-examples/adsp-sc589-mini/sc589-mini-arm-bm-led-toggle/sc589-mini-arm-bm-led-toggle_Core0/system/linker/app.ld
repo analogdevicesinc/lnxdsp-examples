@@ -115,7 +115,8 @@ MEMORY
   /* #### ARM L3 Memory ################################################## */
 
   /* ARM Core 0 L3, DMC1 */
-  MEM_L3 : ORIGIN = 0xC1000000, LENGTH = 240M
+  MEM_L3_UNCACHED : ORIGIN = 0xC1000000, LENGTH = 4M
+  MEM_L3 : ORIGIN = 0xC1400000, LENGTH = 236M
 
 }
 
@@ -242,6 +243,12 @@ SECTIONS
   {
     *page_table_mem.o(.bss .bss*)
   } >MEM_L3 = 0
+
+  /* L3 Uncached Memory. No data placed here by default */
+  .l3_uncached :
+  {
+    *(.l3_data_uncached)
+  } >MEM_L3_UNCACHED = 0
 
   /* L3 Memory. No code/data placed here by default */
   .l3 :

@@ -57,7 +57,7 @@
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.753225" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.753225" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
 								<inputType id="arm.linker.input.1896388918" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
@@ -157,7 +157,7 @@
 									<listOptionValue builtIn="false" value="CORE0"/>
 									<listOptionValue builtIn="false" value="RELEASE"/>
 								</option>
-								<option id="arm.linker.option.ldprocessing.ldfile.12807019" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
+								<option id="arm.linker.option.ldprocessing.ldfile.12807019" name="Custom linker script (-T)" superClass="arm.linker.option.ldprocessing.ldfile" value="&quot;${ProjDirPath}/system/linker/app.ld&quot;" valueType="string"/>
 								<inputType id="arm.linker.input.119749987" superClass="arm.linker.input">
 									<additionalInput kind="additionaldependency" paths="$(USER_OBJS)"/>
 								</inputType>
@@ -221,4 +221,5 @@
 			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="org.eclipse.cdt.core.c++.adi.extension"/>
 		</project-mappings>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
