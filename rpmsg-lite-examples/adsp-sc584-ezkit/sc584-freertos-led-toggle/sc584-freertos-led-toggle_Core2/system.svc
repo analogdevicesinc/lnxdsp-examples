@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+	<installedComponents>
+		<component id="com.analog.crosscore.addins.freertos" name="FreeRTOS" version="1.0.0" visible="false">
+			<component-description><![CDATA[This component provides the FreeRTOS Add-in UI. The add-in is intended to help the users to generate the FreeRTOS configuration code.]]></component-description>
+			<product name="FreeRTOS" version="1.0.0"/>
+		</component>
+		<component id="com.analog.crosscore.addins.freertos.sharc" name="FreeRTOS for SHARC" version="1.0.0" visible="true">
+			<component-description><![CDATA[This component provides ADI's implementation of FreeRTOS.]]></component-description>
+			<product name="FreeRTOS" version="1.0.0"/>
+		</component>
+		<component id="com.analog.sourcegen.component.startup_ldf" name="Startup Code/LDF" version="1.0.0" visible="true">
+			<component-description><![CDATA[This component provides the ability to generate Startup Code and LDF source files. Startup code is a procedure that initializes and configures the processor when execution jumps to the "start" address on reset.
+It sets the machine into a known state, initializes selected features, and enables the standard runtime-model.
+A Linker Description File (LDF) defines the target memory map and the placement of program sections within processor memory.
+It provides information needed to link your code. It can be used to configure memory related options, such as the placement of the system heap, system stack, and external memory.]]></component-description>
+			<product name="Startup Code/LDF" version="1.0.0"/>
+		</component>
+	</installedComponents>
+	<configurations>
+		<configuration id="com.analog.sourcegen.component.startup_ldf">
+			<startup_ldf-configuration>
+				<crt_and_ldf>
+					<propertygroup name="mandatory">
+						<property name="si_revision" value="1.0"/>
+						<property name="ivt_output" value="app_IVT.s"/>
+						<property name="processor" value="ADSP-SC584"/>
+						<property name="product_name" value="CrossCore(R) Embedded Studio"/>
+						<property name="crt_doj" value="app_startup.doj"/>
+						<property name="crt_output" value="app_startup.s"/>
+						<property name="ldf_output" value="app.ldf"/>
+					</propertygroup>
+					<propertygroup name="template_schemas" value="true">
+						<property name="ldf_schema" value="210.00"/>
+						<property name="startup_code_schema" value="211.03"/>
+					</propertygroup>
+					<crt>
+						<propertygroup name="cplb_init" value="true">
+							<property name="cplb_src_file" value="app_cplbtab.c"/>
+							<property name="cplb_ctrl" value="57"/>
+							<property name="cplb_obj_file" value="app_cplbtab.doj"/>
+							<property name="cplb_src_alt" value="false"/>
+						</propertygroup>
+						<propertygroup name="mem_init" value="false"/>
+						<propertygroup name="use_multicores" value="3">
+							<property name="use_core" value="2"/>
+						</propertygroup>
+						<property name="main_never_returns" value="false"/>
+						<property name="use_mt" value="false"/>
+						<property name="init_regs" value="false"/>
+						<property name="zero_return_regs" value="false"/>
+						<property name="using_cplusplus" value="true"/>
+						<property name="use_argv" value="false"/>
+						<property name="use_profiling" value="false"/>
+						<property name="use_default_handlers" value="false"/>
+						<property name="use_user_mod_crt" value="true"/>
+						<property name="use_custom_vector" value="false"/>
+						<property name="dcache_config" value="disable_dcache_and_enable_cplb"/>
+						<property name="detect_stackoverflow" value="false"/>
+						<property name="device_init" value="true"/>
+						<property name="icache_config" value="enable_icache"/>
+					</crt>
+					<ldf>
+						<propertygroup name="system_heap" value="L1">
+							<property name="min_size" value="2"/>
+							<property name="size_units" value="kB"/>
+							<property name="customized" value="false"/>
+						</propertygroup>
+						<propertygroup name="system_stack" value="L1">
+							<property name="size_units" value="kB"/>
+							<property name="customized" value="false"/>
+							<property name="min_size" value="2"/>
+						</propertygroup>
+						<propertygroup name="use_sdram" value="true">
+							<property name="partitioned" value="default"/>
+							<property name="size" value="256"/>
+							<property name="size_units" value="MegaBytes"/>
+							<property name="dmc_size_0" value="256"/>
+						</propertygroup>
+						<propertygroup name="running_from_internal_memory" value="true"/>
+						<propertygroup name="libraries" value="true">
+							<property name="heap_dbg_libs" value="false"/>
+							<property name="no_libdrv" value="true"/>
+							<property name="use_eh_enabled_libs" value="false"/>
+							<property name="use_fixed_point_io_libs" value="false"/>
+							<property name="use_fileio_libs" value="false"/>
+							<property name="use_alt_io_lib" value="false"/>
+						</propertygroup>
+						<property name="use_eh" value="true"/>
+						<property name="user_heap_src_file" value="app_heaptab.c"/>
+						<property name="use_full_cpplib" value="false"/>
+						<property name="use_software_modules" value="false"/>
+						<property name="use_user_mod_ldf" value="true"/>
+						<property name="use_pgo_hw" value="false"/>
+					</ldf>
+				</crt_and_ldf>
+				<sharc_caches>
+					<propertygroup name="icache" value="true">
+						<property name="disabled" value="false"/>
+						<property name="size_in_KB" value="16"/>
+					</propertygroup>
+					<propertygroup name="pmcache" value="true">
+						<property name="disabled" value="false"/>
+						<property name="size_in_KB" value="16"/>
+					</propertygroup>
+					<propertygroup name="dmcache" value="true">
+						<property name="disabled" value="false"/>
+						<property name="size_in_KB" value="16"/>
+					</propertygroup>
+					<propertygroup name="cache_ranges" value="true">
+						<property name="noncacheable_arm_sdram" value="true"/>
+					</propertygroup>
+				</sharc_caches>
+			</startup_ldf-configuration>
+		</configuration>
+		<configuration id="com.analog.crosscore.addins.freertos">
+			<freertos-addin-cfg>
+				<configUSE_MALLOC_FAILED_HOOK>1</configUSE_MALLOC_FAILED_HOOK>
+				<INCLUDE_xResumeFromISR>0</INCLUDE_xResumeFromISR>
+				<INCLUDE_vTaskDelete>1</INCLUDE_vTaskDelete>
+				<configMAX_CO_ROUTINE_PRIORITIES>2</configMAX_CO_ROUTINE_PRIORITIES>
+				<configMAX_API_CALL_INTERRUPT_PRIORITY>18</configMAX_API_CALL_INTERRUPT_PRIORITY>
+				<INCLUDE_vTaskPrioritySet>1</INCLUDE_vTaskPrioritySet>
+				<portCONFIGURE_TIMER_FOR_RUN_TIME_STATS/>
+				<configCOMMAND_INT_MAX_OUTPUT_SIZE>2096</configCOMMAND_INT_MAX_OUTPUT_SIZE>
+				<configUSE_TRACE_FACILITY>0</configUSE_TRACE_FACILITY>
+				<INCLUDE_xTaskGetSchedulerState>0</INCLUDE_xTaskGetSchedulerState>
+				<configUNIQUE_INTERRUPT_PRIORITIES>0</configUNIQUE_INTERRUPT_PRIORITIES>
+				<configSUPPORT_DYNAMIC_ALLOCATION>1</configSUPPORT_DYNAMIC_ALLOCATION>
+				<configUSE_PORT_OPTIMISED_TASK_SELECTION>1</configUSE_PORT_OPTIMISED_TASK_SELECTION>
+				<configUSE_PREEMPTION>1</configUSE_PREEMPTION>
+				<configUSE_TICK_HOOK>0</configUSE_TICK_HOOK>
+				<configUSE_IDLE_HOOK>0</configUSE_IDLE_HOOK>
+				<INCLUDE_xTaskDelayUntil>1</INCLUDE_xTaskDelayUntil>
+				<configMAX_TASK_NAME_LEN>10</configMAX_TASK_NAME_LEN>
+				<INCLUDE_xTaskGetHandle>0</INCLUDE_xTaskGetHandle>
+				<configUSE_CO_ROUTINES>0</configUSE_CO_ROUTINES>
+				<configTIMER_TASK_PRIORITY>6</configTIMER_TASK_PRIORITY>
+				<configUSE_TICKLESS_IDLE>0</configUSE_TICKLESS_IDLE>
+				<INCLUDE_eTaskGetState>1</INCLUDE_eTaskGetState>
+				<configUSE_TASK_NOTIFICATIONS>1</configUSE_TASK_NOTIFICATIONS>
+				<INCLUDE_uxTaskPriorityGet>1</INCLUDE_uxTaskPriorityGet>
+				<configGENERATE_RUN_TIME_STATS>0</configGENERATE_RUN_TIME_STATS>
+				<INCLUDE_xTaskGetIdleTaskHandle>0</INCLUDE_xTaskGetIdleTaskHandle>
+				<configUSE_DAEMON_TASK_STARTUP_HOOK>1</configUSE_DAEMON_TASK_STARTUP_HOOK>
+				<configENABLE_BACKWARD_COMPATIBILITY>1</configENABLE_BACKWARD_COMPATIBILITY>
+				<configTIMER_TASK_STACK_DEPTH>400</configTIMER_TASK_STACK_DEPTH>
+				<configNUM_THREAD_LOCAL_STORAGE_POINTERS>1</configNUM_THREAD_LOCAL_STORAGE_POINTERS>
+				<INCLUDE_xTimerPendFunctionCall>1</INCLUDE_xTimerPendFunctionCall>
+				<portGET_RUN_TIME_COUNTER_VALUE>( ( uint32_t ) ( alt_globaltmr_get64() &gt;&gt; ( uint64_t ) 16 ) )</portGET_RUN_TIME_COUNTER_VALUE>
+				<configAPPLICATION_ALLOCATED_HEAP>0</configAPPLICATION_ALLOCATED_HEAP>
+				<configINTERRUPT_CONTROLLER_CPU_INTERFACE_OFFSET>0</configINTERRUPT_CONTROLLER_CPU_INTERFACE_OFFSET>
+				<INCLUDE_vTaskSuspend>1</INCLUDE_vTaskSuspend>
+				<configUSE_NEWLIB_REENTRANT>0</configUSE_NEWLIB_REENTRANT>
+				<INCLUDE_xTaskAbortDelay>0</INCLUDE_xTaskAbortDelay>
+				<configUSE_TIMERS>1</configUSE_TIMERS>
+				<configTIMER_QUEUE_LENGTH>5</configTIMER_QUEUE_LENGTH>
+				<configIDLE_SHOULD_YIELD>1</configIDLE_SHOULD_YIELD>
+				<configMAX_PRIORITIES>7</configMAX_PRIORITIES>
+				<INCLUDE_vTaskDelay>1</INCLUDE_vTaskDelay>
+				<configTASK_NOTIFICATION_ARRAY_ENTRIES>1</configTASK_NOTIFICATION_ARRAY_ENTRIES>
+				<configMINIMAL_STACK_SIZE>200</configMINIMAL_STACK_SIZE>
+				<configCHECK_FOR_STACK_OVERFLOW>2</configCHECK_FOR_STACK_OVERFLOW>
+				<INCLUDE_xTaskGetCurrentTaskHandle>0</INCLUDE_xTaskGetCurrentTaskHandle>
+				<configTASK_RETURN_ADDRESS>NULL</configTASK_RETURN_ADDRESS>
+				<INCLUDE_xEventGroupSetBitFromISR>0</INCLUDE_xEventGroupSetBitFromISR>
+				<configUSE_16_BIT_TICKS>0</configUSE_16_BIT_TICKS>
+				<configUSE_TIME_SLICING>0</configUSE_TIME_SLICING>
+				<INCLUDE_vTaskCleanUpResources>1</INCLUDE_vTaskCleanUpResources>
+				<configTOTAL_HEAP_SIZE>51200</configTOTAL_HEAP_SIZE>
+				<configUSE_MUTEXES>1</configUSE_MUTEXES>
+				<configTICK_RATE_HZ>1000</configTICK_RATE_HZ>
+				<configQUEUE_REGISTRY_SIZE>8</configQUEUE_REGISTRY_SIZE>
+				<INCLUDE_uxTaskGetStackHighWaterMark>0</INCLUDE_uxTaskGetStackHighWaterMark>
+				<configINTERRUPT_CONTROLLER_BASE_ADDRESS>0</configINTERRUPT_CONTROLLER_BASE_ADDRESS>
+				<configUSE_STATS_FORMATTING_FUNCTIONS>0</configUSE_STATS_FORMATTING_FUNCTIONS>
+				<configUSE_COUNTING_SEMAPHORES>1</configUSE_COUNTING_SEMAPHORES>
+				<configSUPPORT_STATIC_ALLOCATION>1</configSUPPORT_STATIC_ALLOCATION>
+				<configUSE_RECURSIVE_MUTEXES>1</configUSE_RECURSIVE_MUTEXES>
+				<configUSE_APPLICATION_TASK_TAG>0</configUSE_APPLICATION_TASK_TAG>
+				<configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS>0</configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS>
+				<configSETUP_TICK_INTERRUPT>vConfigureTickInterrupt();</configSETUP_TICK_INTERRUPT>
+				<INCLUDE_xTaskResumeFromISR>0</INCLUDE_xTaskResumeFromISR>
+				<INCLUDE_userStartupTask>1</INCLUDE_userStartupTask>
+				<INCLUDE_xSemaphoreGetMutexHolder>0</INCLUDE_xSemaphoreGetMutexHolder>
+				<configUSE_QUEUE_SETS>1</configUSE_QUEUE_SETS>
+				<configCPU_CLOCK_HZ>500</configCPU_CLOCK_HZ>
+				<FREERTOS_COMMIT_ID>f115d71a1c3d159fcb6f150036c88d6108549509</FREERTOS_COMMIT_ID>
+			</freertos-addin-cfg>
+		</configuration>
+	</configurations>
+</root>
