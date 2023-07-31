@@ -269,9 +269,6 @@ int rpmsg_init_channel_to_ARM(void){
 	return 0;
 }
 
-/* Disable prefetch buffers for SC598 as it causes issues with triggering other SHARC */
-const uint32_t __prefetch_ctrl = 0;
-
 int main(int argc, char *argv[])
 {
 	int32_t Result=0, loop=1;
