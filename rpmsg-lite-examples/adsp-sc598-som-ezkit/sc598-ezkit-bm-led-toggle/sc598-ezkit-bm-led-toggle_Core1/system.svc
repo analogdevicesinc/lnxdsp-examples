@@ -24,7 +24,7 @@ It provides information needed to link your code. It can be used to configure me
 					</propertygroup>
 					<propertygroup name="template_schemas" value="true">
 						<property name="ldf_schema" value="211.03"/>
-						<property name="startup_code_schema" value="211.03"/>
+						<property name="startup_code_schema" value="212.01"/>
 					</propertygroup>
 					<crt>
 						<propertygroup name="cplb_init" value="true">
@@ -87,19 +87,19 @@ It provides information needed to link your code. It can be used to configure me
 					</ldf>
 				</crt_and_ldf>
 				<sharc_caches>
-					<propertygroup name="icache" value="false">
-						<property name="disabled" value="true"/>
+					<propertygroup name="icache" value="true">
+						<property name="disabled" value="false"/>
 						<property name="size_in_KB" value="16"/>
 					</propertygroup>
-					<propertygroup name="pmcache" value="false">
-						<property name="disabled" value="true"/>
+					<propertygroup name="pmcache" value="true">
+						<property name="disabled" value="false"/>
 						<property name="size_in_KB" value="16"/>
 					</propertygroup>
-					<propertygroup name="dmcache" value="false">
-						<property name="disabled" value="true"/>
+					<propertygroup name="dmcache" value="true">
+						<property name="disabled" value="false"/>
 						<property name="size_in_KB" value="16"/>
 					</propertygroup>
-					<propertygroup name="cache_ranges" value="false">
+					<propertygroup name="cache_ranges" value="true">
 						<property name="noncacheable_arm_sdram" value="true"/>
 					</propertygroup>
 				</sharc_caches>
