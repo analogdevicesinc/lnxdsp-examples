@@ -13,16 +13,16 @@ This repository follows the same branching strategy as the other software reposi
 
 ## List of examples
 
-| Core 0 | Core 1 | Core 2 | Example name| Wiki/Status                                                                                                                                          |
-| ------ | ------ | ------ | ----------- |------------------------------------------------------------------------------------------------------------------------------------------------------|
-| N/A | Bare Metal | Bare Metal | icap | Part of ALSA-SHARC example https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example                                       |
-| N/A | Bare Metal | Bare Metal | icap-sharc-alsa-example | Part of ALSA-SHARC example https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example                                       |
-| N/A | Bare Metal | Bare Metal | mcapi/mcapi-message-example | MCAPI depricated in ADSP Linux >= 1.0.0, https://wiki.analog.com/resources/tools-software/linuxdsp/docs/linux-kernel-and-drivers/mcapi/mcapi_example |
-| ARM/FreeRTOS | Bare Metal | Bare Metal | remoteproc/sharc-template-code |                                                                                                                                                      |
-| N/A | Bare Metal | Bare Metal | rpmsg-lite  | rpmsg-lite port for SHARC processors. https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example                            |
+| Core 0 | Core 1 | Core 2 | Example name| Wiki/Status                                                                                                                                                                        |
+| ------ | ------ | ------ | ----------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| N/A | Bare Metal | Bare Metal | icap | Part of ALSA-SHARC example [ADSP Linux SHARC-ALSA Example](https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example)                                    |
+| N/A | Bare Metal | Bare Metal | icap-sharc-alsa-example | Part of ALSA-SHARC example [ADSP Linux SHARC-ALSA Example](https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example)                                    |
+| N/A | Bare Metal | Bare Metal | mcapi/mcapi-message-example | MCAPI depricated in ADSP Linux >= 1.0.0, [Analog WIKI MCAPI Examples](https://wiki.analog.com/resources/tools-software/linuxdsp/docs/linux-kernel-and-drivers/mcapi/mcapi_example) |
+| ARM/FreeRTOS | Bare Metal | Bare Metal | remoteproc/sharc-template-code) |                                                                                                                                                                                    |
+| N/A | Bare Metal | Bare Metal | rpmsg-lite  | rpmsg-lite port for SHARC processors. [ADSP Linux SHARC-ALSA Example](https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example)                         |
 | ARM/FreeRTOS | Bare Metal | Bare Metal | rpmsg-lite-examples |
 
-ARM/Linux examples located at [https://github.com/analogdevicesinc/rpmsg-examples](https://github.com/analogdevicesinc/rpmsg-examples)
+ARM/Linux examples located at [ADSP Linux rpmsg-examples](https://github.com/analogdevicesinc/rpmsg-examples)
 
 ## Licensing Information
 Each example in this repository is self-contained and provides licensing information in a **LICENSE.md** file at the top level of the example.
