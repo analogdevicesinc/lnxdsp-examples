@@ -20,7 +20,9 @@ This repository follows the same branching strategy as the other software reposi
 | N/A | Bare Metal | Bare Metal | mcapi/mcapi-message-example | MCAPI depricated in ADSP Linux >= 1.0.0, [Analog WIKI MCAPI Examples](https://wiki.analog.com/resources/tools-software/linuxdsp/docs/linux-kernel-and-drivers/mcapi/mcapi_example) |
 | ARM/FreeRTOS | Bare Metal | Bare Metal | remoteproc/sharc-template-code) |                                                                                                                                                                                    |
 | N/A | Bare Metal | Bare Metal | rpmsg-lite  | rpmsg-lite port for SHARC processors. [ADSP Linux SHARC-ALSA Example](https://github.com/analogdevicesinc/lnxdsp-adi-meta/wiki/SHARC%E2%80%90ALSA-Example)                         |
-| ARM/FreeRTOS | Bare Metal | Bare Metal | rpmsg-lite-examples |
+| Bare Metal | Bare Metal | Bare Metal | rpmsg-lite-examples/\*/\*-arm-bm-led-toggle | example for each platform |
+| Bare Metal | Bare Metal | Bare Metal | rpmsg-lite-examples/\*/\*-bm-led-toggle | example for each platform |
+| ARM/FreeRTOS | Bare Metal | Bare Metal | rpmsg-lite-examples/\*/\*-freerot-led-toggle | example for each platform |
 
 ARM/Linux examples located at [ADSP Linux rpmsg-examples](https://github.com/analogdevicesinc/rpmsg-examples)
 
